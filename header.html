@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="relative" style="background: radial-gradient(22.55% 27.04% at 50% 50%, #3A5A40 0%, #344E41 100%)">
+    <!-- header -->
+    <nav id="intro_section" class="block bg-[#344e41]  py-5 border-gray-200">
+        <div class="container flex flex-wrap items-center lg:justify-around lg:mx-auto p-4">
+            <a href="/" class="flex items-center space-x-4 text-[#dad7cdff] ">
+                <img src="img/avitar.png" alt="avitar" class="h-8 w-auto">
+                <div class="md:text-sm text-xs text-[#dad7cdff] hover:text-[#87b453ff]">
+                    <h1 class="font-semibold ">BUNDINI</h1>
+                    <h3>Whose in YOUR corner</h3>
+                </div>
+            </a>
+
+            <div class="flex items-center">
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col items-center md:p-0 border border-gray-100 rounded-lg text-[#dad7cdff]
+                         md:flex-row md:space-x-8 md:border-0 ">
+                        <li>
+                            <a href="./feature/roster.html" class="dad7cdff flex items-center hover:text-[#87b453ff] hover:font-bold">
+                                Feature
+                            </a>
+                        </li>
+                        <li>
+                            <button id="Galleryhover" class="dropdownButton flex items-center hover:text-[#87b453ff] hover:font-bold" data-dropdown-toggle="Gallerydrophover" data-dropdown-trigger="hover" type="button">
+                                Use Cases
+                                <i class="fa-solid fa-caret-down ml-1"></i>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="Gallerydrophover" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[800px]">
+                                <div class="bg-[#2F2A47] p-8 text-[#dad7cdff]  rounded-lg">
+                                    <div class="grid grid-cols-2 gap-8 space-x-4">
+                                        <!-- By Actor Section -->
+                                        <div>
+                                            <h3 class="font-semibold mb-4">BY ACTOR</h3>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Super User Icon -->
+                                                        <i class="fas fa-user-shield"></i>
+                                                    </div>
+                                                    <button>
+                                                        <a href="superuser.html">Super User</a>
+                                                    </button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Assistant Icon -->
+                                                        <i class="fas fa-user"></i>
+                                                    </div>
+                                                    <button>Assistant</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Organiser Icon -->
+                                                        <i class="fas fa-users-cog"></i>
+                                                    </div>
+                                                    <button>Organiser</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Participant Icon -->
+                                                        <i class="fas fa-user-friends"></i>
+                                                    </div>
+                                                    <button>Participant</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Leader Icon -->
+                                                        <i class="fas fa-user-tie"></i>
+                                                    </div>
+                                                    <button>Leader</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-[#dad7cdff]  flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Mentor Icon -->
+                                                        <i class="fas fa-chalkboard-teacher"></i>
+                                                    </div>
+                                                    <button>Mentor</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <!-- By Plan Section -->
+                                            <div>
+                                                <h3 class="font-semibold mb-4 text-[#a3b18aff]">BY PLAN</h3>
+                                                <div class="space-y-4">
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Pan Icon -->
+                                                            <i class="fas fa-columns"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff] hover:text-[#dad7cdff] hover:text-bold">Plan</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Do Icon -->
+                                                            <i class="fas fa-check-circle"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff] hover:text-[#dad7cdff] hover:text-bold">Do</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Review Icon -->
+                                                            <i class="fas fa-clipboard-list"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff] hover:text-[#dad7cdff] hover:text-boldbYb">Review</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- By Results Section -->
+                                            <div>
+                                                <h3 class="font-semibold mb-4 text-[#87b453ff]">BY RESULTS</h3>
+                                                <div class="space-y-4">
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Visitors Icon -->
+                                                            <i class="fas fa-eye"></i>
+                                                        </div>
+                                                        <button class="font-semibold text-[#87b453ff] hover:text-[#dad7cdff] hover:text-bold">Visitors</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Impact Icon -->
+                                                            <i class="fas fa-cogs"></i>
+                                                        </div>
+                                                        <button class="text-[#87b453ff] hover:text-[#dad7cdff] hover:text-bold">Impact</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Foio Icon -->
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+                                                        <button class="text-[#87b453ff] hover:text-[#dad7cdff] hover:text-bold">Folio</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class="text-[#dad7cdff] hover:text-[#87b453ff] hover:font-bold mr-6">Login</a>
+                <a href="#" class="py-2 px-4 rounded-lg text-[#dad7cdff] font-semibold border-2 border-gray-500
+                      bg-gradient-to-r from-[#588157] to-[#3A5A40] hover:bg-gradient-to-r hover:from-[#3A5A40] hover:to-[#588157] hover:font-medium hover:text-[#87b453ff] transition-all duration-300">
+                    Sign up Free
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+</body>
+</html>

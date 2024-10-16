@@ -27,7 +27,7 @@
                         <ul class="font-medium flex flex-col items-center md:p-0 border border-gray-100 rounded-lg text-[#dad7cdff]
                          md:flex-row md:space-x-8 md:border-0 ">
                                 <li>
-                                    <a href="feature.html" class="dad7cdff flex items-center hover:text-[#87b453ff] hover:font-bold">
+                                    <a href="./feature/roster.html" class="dad7cdff flex items-center hover:text-[#87b453ff] hover:font-bold">
                                         Feature
                                     </a>
                                 </li>
@@ -266,7 +266,7 @@
 
             <!-- Features Grid1 -->
             <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
-                <div class="rounded-md border border-white p-4">
+                <div class="rounded-md border border-white p-4 md:block hidden">
                     <h3 class="text-lg text-[#dad7cdff]  mt-4 mb-8"><b>The ROSTER</b></h3>
                     <h3 class="text-lg text-[#dad7cdff]  mb-4"><i><li>   Events</li></h3>
                     <h3 class="text-lg text-[#dad7cdff]  mb-4">   <li>Attendance</li></h3>
@@ -283,10 +283,20 @@
 
                 <!-- Feature Item -->
                 <div class="rounded-md border border-white p-4 md:col-span-2">
+                    <h3 class="text-lg text-[#dad7cdff] mb-4 font-bold text-center md:hidden block">The ROSTER</h3>
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 p-6">
-                        <img src="img/Landing/Features/TheRoster/event.png" alt="Event" class="w-60 h-96">
-                        <img src="img/Landing/Features/TheRoster/do.png" alt="Do" class="w-60 h-96">
-                        <img src="img/Landing/Features/TheRoster/WhoDoneWhat.png" alt="WhoDoneWhat" class="w-60 h-96">
+                        <div>
+                            <i class="mb-4 text-lg text-center mb-2 md:hidden block">Events</i>
+                            <img src="img/Landing/Features/TheRoster/event.png" alt="Event" class="w-60 h-96">
+                        </div>
+                        <div>
+                            <i class="mb-4 text-lg text-center mb-2 md:hidden block">Attendance</i>
+                            <img src="img/Landing/Features/TheRoster/do.png" alt="Do" class="w-60 h-96">
+                        </div>
+                        <div>
+                            <i class="mb-4 text-lg text-center mb-2 md:hidden block">Who done what</i>
+                            <img src="img/Landing/Features/TheRoster/WhoDoneWhat.png" alt="WhoDoneWhat" class="w-60 h-96">
+                        </div>
                     </div>
                 </div>
             </div>
