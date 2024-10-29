@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="relative" style="background: radial-gradient(50.55% 50.04% at 0% 100%, #a3b18aff 0%, #344e41ff 90%)">
+    <!-- header -->
+    <nav id="intro_section" class="block bg-[#344e41]  py-5 border-gray-200">
+        <div class="container flex flex-wrap items-center lg:justify-around lg:mx-auto p-4">
+            <a href="/" class="flex items-center space-x-4 text-white">
+                <img src="img/avitar.png" alt="avitar" class="h-8 w-auto">
+                <div class="md:text-sm text-xs text-[#dad7cdff]">
+                    <h1 class="font-semibold">BUNDUN</h1>
+                    <h3>Whose in YOUR corner</h3>
+                </div>
+            </a>
+
+            <div class="flex items-center">
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col items-center md:p-0 border border-gray-100 rounded-lg text-[#dad7cdff] md:flex-row md:space-x-8 md:border-0">
+                        <li>
+                            <a href="feature.html" class="flex items-center">
+                                Feature
+                            </a>
+                        </li>
+                        <li>
+                            <button id="Galleryhover" class="dropdownButton flex items-center" data-dropdown-toggle="Gallerydrophover" data-dropdown-trigger="hover" type="button">
+                                Use Cases
+                                <i class="fa-solid fa-caret-down ml-1"></i>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="Gallerydrophover" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[800px]">
+                                <div class="bg-[#2F2A47] p-8 text-white rounded-lg">
+                                    <div class="grid grid-cols-2 gap-8 space-x-4">
+                                        <!-- By Actor Section -->
+                                        <div>
+                                            <h3 class="font-semibold mb-4">By Actor</h3>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Super User Icon -->
+                                                        <i class="fas fa-user-shield"></i>
+                                                    </div>
+                                                    <button>
+                                                        <a href="superuser.html">Super User</a>
+                                                    </button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Assistant Icon -->
+                                                        <i class="fas fa-user"></i>
+                                                    </div>
+                                                    <button>Assistant</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Organiser Icon -->
+                                                        <i class="fas fa-users-cog"></i>
+                                                    </div>
+                                                    <button>Organiser</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Participant Icon -->
+                                                        <i class="fas fa-user-friends"></i>
+                                                    </div>
+                                                    <button>Participant</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Leader Icon -->
+                                                        <i class="fas fa-user-tie"></i>
+                                                    </div>
+                                                    <button>Leader</button>
+                                                </div>
+                                                <div class="group flex items-center space-x-4 border border-white rounded px-4 py-1 hover:bg-white hover:text-black">
+                                                    <div class="w-8 h-8 text-white flex items-center justify-center rounded-full group-hover:text-black">
+                                                        <!-- Mentor Icon -->
+                                                        <i class="fas fa-chalkboard-teacher"></i>
+                                                    </div>
+                                                    <button>Mentor</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <!-- By Plan Section -->
+                                            <div>
+                                                <h3 class="font-semibold mb-4 text-[#a3b18aff]">By Plan</h3>
+                                                <div class="space-y-4">
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Pan Icon -->
+                                                            <i class="fas fa-columns"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff]">Plan</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Do Icon -->
+                                                            <i class="fas fa-check-circle"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff]">Do</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#a3b18aff] flex items-center justify-center rounded-full">
+                                                            <!-- Review Icon -->
+                                                            <i class="fas fa-clipboard-list"></i>
+                                                        </div>
+                                                        <button class="text-[#a3b18aff]">Review</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- By Results Section -->
+                                            <div>
+                                                <h3 class="font-semibold mb-4 text-[#87b453ff]">By Results</h3>
+                                                <div class="space-y-4">
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Visitors Icon -->
+                                                            <i class="fas fa-eye"></i>
+                                                        </div>
+                                                        <button class="text-[#87b453ff]">Visitors</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Impact Icon -->
+                                                            <i class="fas fa-cogs"></i>
+                                                        </div>
+                                                        <button class="text-[#87b453ff]">Impact</button>
+                                                    </div>
+                                                    <div class="flex items-center space-x-2">
+                                                        <div class="w-8 h-8 text-[#87b453ff] flex items-center justify-center rounded-full">
+                                                            <!-- Foio Icon -->
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+                                                        <button class="text-[#87b453ff]">Folio</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class="text-[#dad7cdff] hover:text-gray-300 mr-6">Login</a>
+                <a href="#" class="py-2 px-4 rounded-lg text-[#dad7cdff] font-semibold border-2 border-gray-400
+                      bg-gradient-to-r from-[#588157] to-[#3A5A40] hover:bg-gradient-to-r hover:from-[#3A5A40] hover:to-[#588157] transition-all duration-300">
+                    Sign up Free
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="md:max-w-screen-lg w-full mx-auto lg:px-0 px-4">
+        <!-- Main Section -->
+        <section class="grid grid-cols-2 items-center gap-4 text-center mt-16 text-[#dad7cdff]">
+            <div>
+                <h2 class="text-4xl mb-4 text-start">Digital relational tool <br><i>for improved team relationships</i></h2>
+                <p class="md:text-lg text-md mb-8 text-start">Streamline your team members goals on one platform.</p>
+                <button class="group border-2 text-xl w-52 border-[#dad7cdff] hover:font-semibold flex justify-center items-center px-4 py-2 rounded-md text-center hover:bg-[#dad7cdff] hover:text-black transition-colors duration-300" style="font-family: 'Sinkin Sans', sans-serif;">
+                    <span class="mr-2">Get started</span>
+                    <i class="fa-regular fa-circle-right text-[#dad7cdff] group-hover:text-black hover:transition-colors hover:duration-300 ml-4 hover:font-semibold"></i>
+                </button>
+            </div>
+
+            <div class="flex justify-center items-center mt-12 pb-4">
+                <img src="img/relational.png" class="w-100" alt="relational">
+            </div>
+        </section>
+    </div>
+</div>
+
+<section class="bg-[#1e1d2b] text-[#dad7cdff] pb-4">
+    <div class="max-w-screen-lg mx-auto md:px-0 px-4">
+        <div class="py-4 text-center">
+            <h1 class="md:text-2xl font-semibold text-xl mb-2 text-[#dad7cdff]">Organize your team's ambitions in one place.</h1>
+        </div>
+
+        <div>
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-4 rounded-lg bg-[#262536] border border-[#87b453] border-opacity-25 px-2 py-4 mt-4 mb-4">
+                <div class="text-left p-6">
+                    <h2 class="text-3xl font-bold mb-4">Build relationships</h2>
+                    <p class="text-gray-300 mb-4">
+                        Assemble all of your project stakeholders' one place. Improving communication by having all stakeholers working in the same direction.</p>
+                    <p class="text-gray-300">
+                        Get a complete picture of what your participants have done and what they want to do, so you can better understand your relationship over time.
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <img src="img/relationships.png" class="w-64" alt="Relationships">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-4 rounded-lg bg-[#262536] border border-[#87b453] border-opacity-25 px-2 py-4 mt-4 mb-4">
+                <div class="text-left p-6">
+                    <h2 class="text-3xl font-bold mb-4">Better MesoCycles</h2>
+                    <p class="text-gray-300 mb-4">
+                        Team management made easy. Track interactions across the entire participant's interaction. From first contact to goal achievement.
+                    </p>
+                    <p class="text-gray-300">
+                        Have all the valuable data at your fingertips, with the right people asssupporting the right goals.
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <img src="img/MesoCycles.png" alt="MesoCycles" class="h-96">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-4 rounded-lg bg-[#262536] border border-[#87b453] border-opacity-25 px-2 py-4 mt-4 mb-4">
+                <div class="text-left p-6">
+                    <h2 class="text-3xl font-bold mb-4">Participant retention</h2>
+                    <p class="text-gray-300 mb-4">
+                      Improve your participant relationships, increase participant retention and drive positive community growth.
+                    </p>
+                    <p class="text-gray-300">
+                        Bundini provides a structured participants-centricity business logic so your entire team can create consistent and rewarding experiences.
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <img src="img/retention.png" alt="retention" class="h-96">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="bg-[#87b453] text-[#dad7cdff] pb-4">
+    <div class="container mx-auto px-4 py-10">
+        <div class="text-center text-white mb-10">
+            <h2 class="text-xl font-semibold">
+                Feel the benefits of organising </br>
+                <span class="font-bold">OUR</span> Community Led Projects</br>
+                in <span class="font-bold">Bundini</span>
+            </h2>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+            <div class="bg-[#38374e] p-6 rounded-lg text-white py-12">
+                <h3 class="text-lg font-bold mb-4">Stay on track</h3>
+                <p class="text-sm">
+                    Help your community see the big picture by ensuring that everyone is on
+                    the same page.</br>
+                    Transfer all your community volunteer data in one place
+                    and manage everything with Bundini.
+                </p>
+            </div>
+            <div class="bg-[#38374e] p-6 rounded-lg text-white py-12">
+                <h3 class="text-lg font-bold mb-4">Reduce risk</h3>
+                <p class="text-sm">
+                    Enable flexibility to your community projects. </br>
+                    Build in reliable and predictable controls. </br>
+                    Map out best practices, </br>
+                    sharing ideas that strengthen everyone's voice.
+                </p>
+            </div>
+            <div class="bg-[#38374e] p-6 rounded-lg text-white py-12">
+                <h3 class="text-lg font-bold mb-4">Clear Decision making</h3>
+                <p class="text-sm">
+                    By having clear controls, an audit trail of decision-making is enabled.</br>
+                    Getting from disorganised community projects to clear successful
+                    outcomes.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-black">
+    <div class="max-w-screen-xl mx-auto md:flex md:justify-between md:items-center grid grid-cols-1 text-gray-400 md:px-0 px-4 pb-4">
+        <div class="md:mb-0 mb-2">
+            (c) Bundini 2024 by ASAP
+        </div>
+        <div class="md:mb-0 mb-2">
+            Cookies Terms Privacy Security itemap
+        </div>
+        <div class="flex items-center">
+            <i class="fa-solid fa-globe mr-2"></i>
+            English
+        </div>
+    </div>
+</footer>
+</body>
+</html>
